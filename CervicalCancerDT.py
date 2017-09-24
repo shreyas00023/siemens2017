@@ -6,7 +6,6 @@ import random
 import matplotlib.pyplot as plt
 from sklearn.neural_network import MLPClassifier
 
-
 def getData(file):
     header = []
     data = []
@@ -29,6 +28,7 @@ def getData(file):
             templabel = [int(s) for s in temp]
             templabel[3] = templabel[3]*2
             labels.append(sum(templabel))
+    print("read data")
     return header, data,labels
 def makeTraningTest(trainingsize, data,labels):
     dataset = [[j for j in i] for i in data]
@@ -50,9 +50,8 @@ def neuralNetwork(trainingdata,traininglabels, testdata, testlabels):
     clf = clf.fit(trainingdata, traininglabels)
     pred = clf.predict(testdata)
     return accuracy_score(testlabels, pred), clf
-
 one = getData("./risk_factors_cervical_cancer.csv")
-print("read")
+#print("read")
 # accmax = 0
 # sizemax = 0
 #average_acc = []
@@ -119,14 +118,14 @@ a5 = float(sys.argv[31])
 pred = clf.predict([[b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z,a1,a2,a3,a4,a5]])[0]
 
 if pred==0:
-    print("Very Low Risk of Cervical Cancer")
+    print(output,"Very Low Risk of Cervical Cancer")
 if pred==1:
-    print("Low Risk of Cervical Cancer")
+    print(output,"Low Risk of Cervical Cancer")
 if pred==2:
-    print("Slight Risk of Cervical Cancer")
+    print(output,"Slight Risk of Cervical Cancer")
 if pred==3:
-    print("Medium Risk of Cervical Cancer")
+    print(output,"Medium Risk of Cervical Cancer")
 if pred==4:
-    print("High Risk of Cervical Cancer")
+    print(output,"High Risk of Cervical Cancer")
 if pred==5:
-    print("Very High Risk of Cervical Cancer, See a Doctor")
+    print(output,"Very High Risk of Cervical Cancer, See a Doctor")
