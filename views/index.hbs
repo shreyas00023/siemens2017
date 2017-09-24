@@ -1,0 +1,315 @@
+<html lang="en">
+    <head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+		<!-- Website Font style -->
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+		<link rel="stylesheet" href="public/stylesheets/style.css">
+		<!-- Google Fonts -->
+		<link href='https://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+
+		<title>{{title}}</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row main">
+				<div class="main-login main-center">
+				<h1>{{heading}}</h1>
+					<form class="" method="post" action="run" id="myform">
+
+						<div class="form-group">
+							<label for="name" class="cols-sm-2 control-label">Age</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+									<input type="text"  class="form-control" name="age" id="age"  placeholder="Enter your Age"/>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="email" class="cols-sm-2 control-label">Number of Sexual Partners</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+									<input type="text"  class="form-control" name="partners" id="partners"  placeholder="Enter your Number of Sexual Partners"/>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="username" class="cols-sm-2 control-label">First Sexual Intercourse</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
+									<input type="text"  class="form-control" name="firstsex" id="firstsex"  placeholder="Enter the age of your first sexual intercourse"/>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="password" class="cols-sm-2 control-label">Number of Pregnancies</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+									<input type="text"  class="form-control" name="numpreg" id="numpreg"  placeholder="Enter your Number of Pregnancies"/>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="confirm" class="cols-sm-2 control-label">Smokes</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+									<input type="text"  class="form-control" name="smokes" id="smokes"  placeholder="Enter 1 if you smoke, 0 if not"/>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+                        		<label for="confirm" class="cols-sm-2 control-label">Smokes(years)</label>
+                        				<div class="cols-sm-10">
+                        					<div class="input-group">
+                        						<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                        						<input type="text"  class="form-control" name="smokesyear" id="smokesyear"  placeholder="Enter how many years you have been smoking"/>
+                        				</div>
+                        		</div>
+                        </div>
+
+                        <div class="form-group">
+                        							<label for="confirm" class="cols-sm-2 control-label">Smokes(packs/year)</label>
+                        							<div class="cols-sm-10">
+                        								<div class="input-group">
+                        									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                        									<input type="text"  class="form-control" name="smokespack" id="smokespack"  placeholder="Enter how many packs per year you smoke"/>
+                        								</div>
+                        							</div>
+                        						</div>
+                        <div class="form-group">
+                        							<label for="confirm" class="cols-sm-2 control-label">Hormonal Contraceptives</label>
+                        							<div class="cols-sm-10">
+                        								<div class="input-group">
+                        									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                        									<input type="text"  class="form-control" name="contra" id="contra"  placeholder="Enter 1 if you use hormonal contraceptives, 0 if not"/>
+                        								</div>
+                        							</div>
+                        						</div>
+                        <div class="form-group">
+                        							<label for="confirm" class="cols-sm-2 control-label">Hormonal Contraceptives (years)</label>
+                        							<div class="cols-sm-10">
+                        								<div class="input-group">
+                        									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                        									<input type="text"  class="form-control" name="contrayears" id="contrayears"  placeholder="Enter how many years you have been using hormonal contraceptives"/>
+                        								</div>
+                        							</div>
+                        						</div>
+                        <div class="form-group">
+                        							<label for="confirm" class="cols-sm-2 control-label">IUD</label>
+                        							<div class="cols-sm-10">
+                        								<div class="input-group">
+                        									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                        									<input type="text"  class="form-control" name="iud" id="iud"  placeholder="Enter 1 if you use an intrauterine device, 0 if not"/>
+                        								</div>
+                        							</div>
+                        						</div>
+						<div class="form-group ">
+                        							<label for="confirm" class="cols-sm-2 control-label">IUD(years)</label>
+                        							<div class="cols-sm-10">
+                        								<div class="input-group">
+                        									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                        									<input type="text"  class="form-control" name="iudyears" id="iudyears"  placeholder="Enter how many years you have been using an IUD"/>
+                        								</div>
+                        							</div>
+                        						</div>
+                        <div class="form-group ">
+                                                	<label for="confirm" class="cols-sm-2 control-label">STDs</label>
+                                                	<div class="cols-sm-10">
+                                                	<div class="input-group">
+                                                		<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                                                			<input type="text"  class="form-control" name="std" id="std"  placeholder="Enter 1 if you have an STD, 0 if not"/>
+                                                		</div>
+                                               </div>
+                                    </div>
+                        <div class="form-group ">
+                                                							<label for="confirm" class="cols-sm-2 control-label">STD(number)</label>
+                                                							<div class="cols-sm-10">
+                                                								<div class="input-group">
+                                                									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                                                									<input type="text"  class="form-control" name="stdnum" id="stdnum"  placeholder="Enter how many STDs you have"/>
+                                                								</div>
+                                                							</div>
+                                                						</div>
+                        <div class="form-group ">
+                                                							<label for="confirm" class="cols-sm-2 control-label">Condylomatosis</label>
+                                                							<div class="cols-sm-10">
+                                                								<div class="input-group">
+                                                									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                                                									<input type="text"  class="form-control" name="cond" id="cond"  placeholder="Enter 1 if you have Condylomatosis, 0 if not"/>
+                                                								</div>
+                                                							</div>
+                                                						</div>
+  						<div class="form-group ">
+                          							<label for="confirm" class="cols-sm-2 control-label">Cervical Condylomatosis</label>
+                          							<div class="cols-sm-10">
+                          								<div class="input-group">
+                          									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                          									<input type="text"  class="form-control" name="cervc" id="cervc"  placeholder="Enter 1 if you have cervical condylomatosis, 0 if not"/>
+                          								</div>
+                          							</div>
+                          						</div>
+                            <div class="form-group ">
+                          							<label for="confirm" class="cols-sm-2 control-label">Vaginal Condylomatosis</label>
+                          							<div class="cols-sm-10">
+                          								<div class="input-group">
+                          									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                          									<input type="text"  class="form-control" name="vagc" id="vagc"  placeholder="Enter 1 if you have vaginal condylomatosis, 0 if not"/>
+                          								</div>
+                          							</div>
+                          						</div>
+                            <div class="form-group ">
+                          							<label for="confirm" class="cols-sm-2 control-label">Vulvo-perineal Condylomatosis</label>
+                          							<div class="cols-sm-10">
+                          								<div class="input-group">
+                          									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                          									<input type="text"  class="form-control" name="vpc" id="vpc"  placeholder="Enter 1 if you have vulvo-perineal condylomatosis, 0 if not"/>
+                          								</div>
+                          							</div>
+                          						</div>
+                            <div class="form-group ">
+                          							<label for="confirm" class="cols-sm-2 control-label">Syphilis</label>
+                          							<div class="cols-sm-10">
+                          								<div class="input-group">
+                          									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                          									<input type="text"  class="form-control" name="syp" id="syp"  placeholder="Enter 1 if you have syphilis, 0 if not"/>
+                          								</div>
+                          							</div>
+                          						</div>
+                            <div class="form-group ">
+                          							<label for="confirm" class="cols-sm-2 control-label">Pelvic Inflammatory Disease</label>
+                          							<div class="cols-sm-10">
+                          								<div class="input-group">
+                          									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                          									<input type="text"  class="form-control" name="pid" id="pid"  placeholder="Enter 1 if you have pelvic inflammatory disease, 0 if not"/>
+                          								</div>
+                          							</div>
+                          						</div>
+                            <div class="form-group ">
+                          							<label for="confirm" class="cols-sm-2 control-label">Genital Herpes</label>
+                          							<div class="cols-sm-10">
+                          								<div class="input-group">
+                          									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                          									<input type="text"  class="form-control" name="gherp" id="gherp"  placeholder="Enter 1 if you have genital herpes, 0 if not"/>
+                          								</div>
+                          							</div>
+                          						</div>
+                            <div class="form-group ">
+                          							<label for="confirm" class="cols-sm-2 control-label">Molluscum Contagiosum</label>
+                          							<div class="cols-sm-10">
+                          								<div class="input-group">
+                          									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                          									<input type="text"  class="form-control" name="mcont" id="mcont"  placeholder="Enter 1 if you have molluscum contagiosum, 0 if not"/>
+                          								</div>
+                          							</div>
+                          						</div>
+                            <div class="form-group ">
+                          							<label for="confirm" class="cols-sm-2 control-label">AIDs</label>
+                          							<div class="cols-sm-10">
+                          								<div class="input-group">
+                          									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                          									<input type="text"  class="form-control" name="aids" id="aids"  placeholder="Enter 1 if you have AIDs, 0 if not"/>
+                          								</div>
+                          							</div>
+                          						</div>
+                            <div class="form-group ">
+                          							<label for="confirm" class="cols-sm-2 control-label">HIV</label>
+                          							<div class="cols-sm-10">
+                          								<div class="input-group">
+                          									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                          									<input type="text"  class="form-control" name="hiv" id="hiv"  placeholder="Enter 1 if you have HIV, 0 if not"/>
+                          								</div>
+                          							</div>
+                          						</div>
+                            <div class="form-group ">
+                          							<label for="confirm" class="cols-sm-2 control-label">Hepatitis B</label>
+                          							<div class="cols-sm-10">
+                          								<div class="input-group">
+                          									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                          									<input type="text"  class="form-control" name="hpb" id="hpb"  placeholder="Enter 1 if you have hepatitis B, 0 if not"/>
+                          								</div>
+                          							</div>
+                          						</div>
+                            <div class="form-group ">
+                          							<label for="confirm" class="cols-sm-2 control-label">HPV</label>
+                          							<div class="cols-sm-10">
+                          								<div class="input-group">
+                          									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                          									<input type="text"  class="form-control" name="hpv" id="hpv"  placeholder="Enter 1 if you have hpv, 0 if not"/>
+                          								</div>
+                          							</div>
+                          						</div>
+                            <div class="form-group ">
+                          							<label for="confirm" class="cols-sm-2 control-label">STDs: Number of Diagnosis</label>
+                          							<div class="cols-sm-10">
+                          								<div class="input-group">
+                          									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                          									<input type="text"  class="form-control" name="diag" id="diag"  placeholder="Enter number of STD Diagnosis"/>
+                          								</div>
+                          							</div>
+                          						</div>
+                            <div class="form-group ">
+                          							<label for="confirm" class="cols-sm-2 control-label">Time Since first Diagnosis</label>
+                          							<div class="cols-sm-10">
+                          								<div class="input-group">
+                          									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                          									<input type="text"  class="form-control" name="diagtime" id="diagtime"  placeholder="Enter years since first STD diagnosis, 0 if none"/>
+                          								</div>
+                          							</div>
+                          						</div>
+                            <div class="form-group ">
+                          							<label for="confirm" class="cols-sm-2 control-label">Time Since last Diagnosis</label>
+                          							<div class="cols-sm-10">
+                          								<div class="input-group">
+                          									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                          									<input type="text"  class="form-control" name="diagtimelast" id="diagtimelast"  placeholder="Enter years since last STD diagnosis, 0 if none"/>
+                          								</div>
+                          							</div>
+                          						</div>
+                            <div class="form-group ">
+                          							<label for="confirm" class="cols-sm-2 control-label">Diagnosis: Cancer</label>
+                          							<div class="cols-sm-10">
+                          								<div class="input-group">
+                          									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                          									<input type="text" class="form-control" name="dxcancer" id="dxcancer"  placeholder="Enter 1 if you have been diagnosed with any cancer, 0 if not"/>
+                          								</div>
+                          							</div>
+                          						</div>
+                            <div class="form-group ">
+                          							<label for="confirm" class="cols-sm-2 control-label">Diagnosis: Cervical Intraepithelial Neoplasia</label>
+                          							<div class="cols-sm-10">
+                          								<div class="input-group">
+                          									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                          									<input type="text"  class="form-control" name="dxcin" id="dxcin"  placeholder="Enter 1 if you have been diagnosed with cervical intraepithelial neoplasia, 0 if not"/>
+                          								</div>
+                          							</div>
+                          						</div>
+                             <div class="form-group ">
+                           							<label for="confirm" class="cols-sm-2 control-label">Diagnosis: HPV</label>
+                           							<div class="cols-sm-10">
+                           								<div class="input-group">
+                           									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                           									<input type="text"  class="form-control" name="dxhpv" id="dxhpv"  placeholder="Enter 1 if you have been diagnosed with hpv, 0 if not"/>
+                           								</div>
+                           							</div>
+                           						</div>
+						</div>
+						<button align="center" id="button" class="button" type="submit" form="myform">Submit</button>
+                        <h3 align="center">{{result}}</h3>
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
