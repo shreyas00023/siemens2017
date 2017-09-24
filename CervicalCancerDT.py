@@ -51,7 +51,7 @@ def neuralNetwork(trainingdata,traininglabels, testdata, testlabels):
     pred = clf.predict(testdata)
     return accuracy_score(testlabels, pred), clf
 
-one = getData("risk_factors_cervical_cancer.csv")
+one = getData("./risk_factors_cervical_cancer.csv")
 # accmax = 0
 # sizemax = 0
 #average_acc = []
